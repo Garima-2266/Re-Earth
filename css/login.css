@@ -1,0 +1,207 @@
+:root{
+    --navbar: rgba(0, 0, 0, 0);
+    --background:rgb(212, 212, 212);
+    --white:white;
+    --black:black;
+    --button-color:rgb(111, 219, 61);
+    --radiusborder: 20px;
+    overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+    font-family: "Poppins";
+    font-size: medium;
+    overflow: hidden;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/Images/login-images/backlogin.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-color: green;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f ;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    /* background: linear-gradient(to right, #1a43e9,#dd940e); */
+    background: var(--button-color);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons{
+margin: 30px auto;
+text-align: center;
+}
+.social-icons img{
+width: 30px;
+margin: 0 12px;
+box-shadow: 0 0 20px 0 #050d6c3d;
+cursor: pointer;
+border-radius: 50%;
+}
+.input-group{
+  top: 180px;  
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field{
+width: 100%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1px solid #999;
+outline: none;
+background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    /* background: linear-gradient(to right,#163edf,#e2a10b); */
+    background: var(--button-color);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#register{
+  left: 450px;  
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: var(--navbar);
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    height: 95%;
+    width: 40%;
+  display: flex;
+  justify-content:start ;
+  align-items: center;
+}
+.logo img{
+    height:75%;
+  width:11%;
+  margin-left: 2rem;
+  margin-right: 0.3rem;
+} 
+.bar{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-btn{
+    height:2rem;
+    width: 7rem;
+    font-size: 15px;
+    font-family: "Poppins";
+    outline: none;
+    background-color:var(--button-color);
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radiusborder);
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navbar-btn:hover{
+    background: var(--white);
+}
+.bar a{
+        text-decoration: none;
+            color:var(--black);
+}
+.login-btn
+{ 
+    height:2rem;
+    width: 10rem;
+    font-size: 15px;
+    font-family: "Poppins";
+    outline: none;
+    background-color:var(--button-color);
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radiusborder);
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+} 
+.login-btn:hover{
+    background: var(--white);
+    transform: scale(1.15);
+}
+.login{
+    display: none;
+    height: 100%;
+    width: 15%;
+    display: grid;
+    place-items: center;
+}
+.login a{
+    text-decoration: none;
+        color: var(--white);
+
+}
